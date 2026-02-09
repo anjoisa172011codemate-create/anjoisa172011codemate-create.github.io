@@ -2,31 +2,35 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Método de Pago</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pago</title>
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Paso 2: Método de Pago</h1>
+    <header><h1>Paso 2: Método de Pago</h1></header>
+
+    <section class="bloque" style="max-width: 800px; margin: 0 auto;">
+        <h3>Seleccione forma de pago:</h3>
         
-        <form>
-            <div style="margin-bottom: 10px;">
-                <input type="radio" name="pago" checked> <label>Tarjeta de Crédito / Débito</label>
-                <div style="margin-left: 20px; border: 1px dashed #999; padding: 5px;">
-                    <input type="text" placeholder="Número de Tarjeta">
-                    <input type="text" placeholder="MM/AA" style="width: 60px;">
-                    <input type="text" placeholder="CVC" style="width: 50px;">
+        <div class="bloque">
+            <input type="radio" name="pago" checked> <label>Tarjeta de Crédito / Débito</label>
+            <div style="margin-left: 20px; padding: 10px; border-left: 2px dashed #ccc;">
+                <label>Número de Tarjeta:</label>
+                <input type="text">
+                <div class="row">
+                    <div class="col-half"><input type="text" placeholder="MM/AA"></div>
+                    <div class="col-half"><input type="text" placeholder="CVC"></div>
                 </div>
             </div>
-            
-            <div>
-                <input type="radio" name="pago"> <label>PayPal</label>
-            </div>
-        </form>
-
-        <div style="text-align: right; border: none;">
-            <a href="procesando.html" class="btn">Pagar Ahora &rarr;</a>
         </div>
-    </div>
+
+        <div class="bloque">
+            <input type="radio" name="pago"> <label>PayPal</label>
+        </div>
+
+        <div style="text-align: right; margin-top: 20px;">
+            <a href="procesando.html" class="btn">FINALIZAR COMPRA</a>
+        </div>
+    </section>
 </body>
 </html>

@@ -2,44 +2,53 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Detalle de Producto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Detalle del Producto</h1>
-            <a href="catalogo.html" class="btn">Volver</a>
-        </header>
+    <header>
+        <h1>Detalle de Producto</h1>
+        <a href="catalogo.html" class="btn">Volver</a>
+    </header>
 
-        <section>
-            <div class="row">
-                <div class="col-50">
-                    <div class="img-placeholder">
-                        [Imagen Grande del Zapato]
-                    </div>
-                </div>
-                
-                <div class="col-50">
-                    <h2>Zapato Running Pro</h2>
-                    <p style="font-size: 1.2em; font-weight: bold;">Precio: $120.00</p>
-                    
-                    <div>
-                        <h4>Características:</h4>
-                        <ul>
-                            <li>Material: Malla transpirable</li>
-                            <li>Suela: Goma antideslizante</li>
-                            <li>Tallas: 38 - 45</li>
-                        </ul>
-                    </div>
-
-                    <label>Cantidad:</label>
-                    <input type="number" value="1" style="max-width: 100px;">
-                    
-                    <a href="carrito.html" class="btn">Añadir al Carrito &rarr;</a>
+    <section>
+        <div class="row">
+            <div class="col-half">
+                <div class="img-box" style="height: 400px;">[IMAGEN GRANDE PRODUCTO]</div>
+                <div class="row">
+                    <div class="col-third"><div class="img-box" style="height:80px">min1</div></div>
+                    <div class="col-third"><div class="img-box" style="height:80px">min2</div></div>
+                    <div class="col-third"><div class="img-box" style="height:80px">min3</div></div>
                 </div>
             </div>
-        </section>
-    </div>
+
+            <div class="col-half">
+                <h2>Zapato Deportivo X</h2>
+                <h3>Precio: $120.00</h3>
+                <p>Descripción corta del producto para atraer al cliente.</p>
+
+                <div class="bloque">
+                    <h4>Características Técnicas:</h4>
+                    <ul>
+                        <li>Material: Cuero sintético</li>
+                        <li>Suela: Goma eva</li>
+                        <li>Resistencia al agua: Sí</li>
+                        <li>Garantía: 1 año</li>
+                    </ul>
+                </div>
+
+                <label>Seleccionar Talla:</label>
+                <select>
+                    <option>38</option>
+                    <option>40</option>
+                    <option>42</option>
+                </select>
+
+                <br><br>
+                <a href="carrito.html" class="btn" style="width:100%; text-align:center;">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -2,26 +2,47 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Información de Contacto</title>
-    <link rel="stylesheet" href="../../css/style.css"> </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Contacto</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
 <body>
-    <div class="container">
-        <h1>Paso 1: Información de Contacto</h1>
-        
-        <form>
-            <label>Nombre Completo:</label><br>
-            <input type="text" placeholder="Tu nombre"><br>
-            
-            <label>Dirección de Envío:</label><br>
-            <input type="text" placeholder="Calle, Ciudad..."><br>
-            
-            <label>Correo Electrónico:</label><br>
-            <input type="email" placeholder="email@ejemplo.com"><br>
-        </form>
+    <header><h1>Paso 1: Información de Contacto y Envío</h1></header>
 
-        <div style="text-align: right; border: none;">
-            <a href="pago.html" class="btn">Siguiente: Método de Pago &rarr;</a>
-        </div>
-    </div>
+    <section class="bloque" style="max-width: 800px; margin: 0 auto;">
+        <form>
+            <div class="row">
+                <div class="col-half">
+                    <label>Nombre:</label>
+                    <input type="text">
+                </div>
+                <div class="col-half">
+                    <label>Apellidos:</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <label>Dirección:</label>
+            <input type="text" placeholder="Calle, número, depto">
+
+            <div class="row">
+                <div class="col-half">
+                    <label>Ciudad:</label>
+                    <input type="text">
+                </div>
+                <div class="col-half">
+                    <label>Código Postal:</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <label>Teléfono:</label>
+            <input type="tel">
+
+            <div style="text-align: right; margin-top: 20px;">
+                <a href="pago.html" class="btn">Siguiente: Pago &rarr;</a>
+            </div>
+        </form>
+    </section>
 </body>
 </html>

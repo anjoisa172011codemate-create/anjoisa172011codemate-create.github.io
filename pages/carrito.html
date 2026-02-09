@@ -2,26 +2,38 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Carrito de Compras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Tu Carrito</h1>
-        
-        <section>
-            <div style="display: flex; justify-content: space-between;">
-                <span>Producto: Zapato Running Pro</span>
-                <span>Precio: $120.00</span>
-                <span>Cantidad: 1</span>
+    <header><h1>Tu Carrito de Compras</h1></header>
+
+    <div class="row">
+        <section class="col-full" style="flex: 70%;">
+            <div class="bloque row" style="align-items: center;">
+                <div class="col-quart"><div class="img-box" style="height:80px">[Img]</div></div>
+                <div class="col-half">
+                    <h3>Zapato Deportivo X</h3>
+                    <p>Talla: 40</p>
+                </div>
+                <div class="col-quart">
+                    <p>$120.00</p>
+                    <button>Eliminar</button>
+                </div>
             </div>
         </section>
 
-        <section style="text-align: right;">
-            <h3>Total: $120.00</h3>
-            <a href="catalogo.html" class="btn">Seguir Comprando</a>
-            <a href="checkout/contacto.html" class="btn">Proceder al Pago &rarr;</a>
-        </section>
+        <aside class="col-full" style="flex: 30%;">
+            <div class="bloque">
+                <h3>Resumen</h3>
+                <p>Subtotal: $120.00</p>
+                <p>Envío: $10.00</p>
+                <hr style="border:1px dashed #000">
+                <h3>Total: $130.00</h3>
+                <a href="checkout/contacto.html" class="btn" style="width:100%; text-align:center;">PAGAR</a>
+            </div>
+        </aside>
     </div>
 </body>
 </html>

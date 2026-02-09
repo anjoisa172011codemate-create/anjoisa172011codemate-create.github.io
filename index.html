@@ -2,27 +2,111 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tienda de Zapatos - Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Tienda Zapatos</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>LOGO TIENDA</h1>
-            <nav>
-                <span>Inicio</span> | <span>Hombres</span> | <span>Mujeres</span> | <span>Niños</span>
-            </nav>
-        </header>
 
-        <section>
-            <h2>Banner Principal (Promociones)</h2>
-            <p>[Imagen Promocional Aquí]</p>
-            <a href="pages/catalogo.html" class="btn">Ver Catálogo Completo &rarr;</a>
-        </section>
+    <header>
+        <div class="row" style="display: grid;">
+            <div class="col-third" style="grid-column: 1;">
+                <h1>LOGO</h1>
+            </div>
+            <div class="col-full" style="grid-column: 3;">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="pages/catalogo.html">Catálogo</a></li>
+                        <li><a href="#nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#contacto">Contacto / Ubicación</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-        <footer>
-            <p>Pie de página: Redes sociales | Enlaces legales</p>
-        </footer>
-    </div>
+    <section>
+        <h2>Banner Principal</h2>
+        <div class="img-box" style="height: 300px;">
+            [BANNER GIGANTE PROMOCIONAL]
+        </div>
+        <center><a href="pages/catalogo.html" class="btn">Ver Catálogo</a></center>
+    </section>
+
+    <section>
+        <h2>Productos Destacados</h2>
+        <div class="row">
+            <div class="col-quart">
+                <article class="bloque">
+                    <div class="img-box">[Foto]</div>
+                    <h3>Zapato A</h3>
+                    <a href="pages/producto.html" class="btn">Ver</a>
+                </article>
+            </div>
+            <div class="col-quart">
+                <article class="bloque">
+                    <div class="img-box">[Foto]</div>
+                    <h3>Zapato B</h3>
+                    <a href="pages/producto.html" class="btn">Ver</a>
+                </article>
+            </div>
+            <div class="col-quart">
+                <article class="bloque">
+                    <div class="img-box">[Foto]</div>
+                    <h3>Zapato C</h3>
+                    <a href="pages/producto.html" class="btn">Ver</a>
+                </article>
+            </div>
+            <div class="col-quart">
+                <article class="bloque">
+                    <div class="img-box">[Foto]</div>
+                    <h3>Zapato D</h3>
+                    <a href="pages/producto.html" class="btn">Ver</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Categorías</h2>
+        <div class="row">
+            <div class="col-third bloque" style="text-align:center;">HOMBRES</div>
+            <div class="col-third bloque" style="text-align:center;">MUJERES</div>
+            <div class="col-third bloque" style="text-align:center;">NIÑOS</div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una tienda especializada en calzado de alta calidad...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+
+    <section id="contacto">
+        <div class="row">
+            <div class="col-half">
+                <h3>Ubicación</h3>
+                <div class="img-box">[MAPA DE GOOGLE]</div>
+                <p>Calle Falsa 123, Ciudad.</p>
+            </div>
+            <div class="col-half">
+                <h3>Contáctanos</h3>
+                <form>
+                    <label>Email:</label>
+                    <input type="text">
+                    <label>Mensaje:</label>
+                    <textarea rows="4"></textarea>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Footer: Copyright 2026 - Redes Sociales</p>
+        <p>Made by <a href="https://codematehub.com" target="_blank" rel="noopener noreferrer">CodemateHub</a></p>
+    </footer>
+
 </body>
 </html>

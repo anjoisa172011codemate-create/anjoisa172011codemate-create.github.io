@@ -2,24 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Procesando...</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="3;url=finalizado.html">
+    <title>Procesando</title>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <div class="container" style="text-align: center; padding: 50px;">
-        <h1>Procesando Pago...</h1>
-        <div style="width: 50px; height: 50px; border: 2px dashed #000; border-radius: 50%; display: inline-block; animation: spin 1s infinite linear;"></div>
-        <p>Por favor espere, no cierre esta ventana.</p>
-        <p>Validando transacción...</p>
+    <div style="height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <div style="width: 80px; height: 80px; border: 4px dashed #000; border-radius: 50%; animation: girar 1s infinite linear;"></div>
+        <h2>Procesando su pago...</h2>
+        <p>Por favor, no cierre esta ventana.</p>
     </div>
 
     <style>
-        /* Animación simple de rotación para el spinner */
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+        @keyframes girar { 100% { transform: rotate(360deg); } }
     </style>
 </body>
 </html>
